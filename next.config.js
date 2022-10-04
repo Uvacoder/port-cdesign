@@ -19,7 +19,10 @@ module.exports = semi({
   reactStrictMode: true,
   swcMinify: true,
    images: {
+    loader: 'cloudinary',
+    path: '/',
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 });
+
