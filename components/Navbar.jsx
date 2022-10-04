@@ -62,12 +62,12 @@ const Navbar = () => {
         
           <Popover
            content={
-            <Image className="mx-4"  src='/../public/navbar/qrcode@2x.png' alt='picture of website logo' width={240} height={240}/>}
+            <Image className="mx-4"  src='/../public/navbar/qrcode@2x.png' alt='picture of wechat qrcode' width={240} height={240}/>}
             trigger="click"
             clickToHide={true}
             position= 'bottomRight'>
               <div className="self-center">
-                <Image className=" hover:opacity-80 active:opacity-95"  src='/../public/navbar/qrcode.svg' alt='picture of website logo' width={36} height={36}/>
+                <Image className=" hover:opacity-80 active:opacity-95"  src='/../public/navbar/qrcode.svg' alt='icon qrcode' width={36} height={36}/>
               </div>
           
 
