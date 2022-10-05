@@ -13,7 +13,13 @@ class Qrcode extends React.Component {
         };
 
         this.content = (
+            <div className='flex flex-col p-4'>
+
             <Image className="mx-4"  src={qrcode} alt='picture of wechat qrcode' width={240} height={240}/>
+            <div className='text-lg font-bold  text-center my-2'>
+               Wechat
+            </div>
+            </div>
         );
 
         this.toggleShow = this.toggleShow.bind(this);
@@ -38,7 +44,7 @@ class Qrcode extends React.Component {
                     position='bottomRight'
                     onClickOutSide =  {this.toggleShow}
                     >
-                        <button  onClick={this.toggleShow}>
+                        <button onClick={this.toggleShow}>
                         <Image className=" hover:opacity-80 active:opacity-95"  src={iconQrcode} alt='icon qrcode' width={36} height={36}/>
                         </button>
                     </Popover>

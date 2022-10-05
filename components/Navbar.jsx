@@ -41,9 +41,9 @@ const Navbar = () => {
     
     <div className="fixed z-10 flex w-full justify-between h-20 px-6 lg:px-10 text-white  mix-blend-difference">
       <div className = 'self-center '>
-      <Link href="/">
+      {/* <Link href="/">
               <a><Logo/></a>
-              </Link>
+              </Link> */}
         
       </div>
         <div className ='self-center uppercase  '>
@@ -75,16 +75,18 @@ const Navbar = () => {
         </div>
         
         
-        <SideSheet title={
-          <div className = 'self-center '>
-          <Link href="/">
-                  <a>
-                    <Image src={logoBlack } width= {36} height={36}></Image>
-                  </a>
-                  </Link>
+        <SideSheet
+        
+        //  title={
+        //   <div className = 'self-center '>
+        //   <Link href="/">
+        //           <a>
+        //             <Image src={logoBlack } width= {36} height={36}></Image>
+        //           </a>
+        //           </Link>
             
-          </div>
-        }
+        //   </div>
+        // }
          visible={visible} 
           onCancel={change}
           placement= 'top'>
@@ -111,6 +113,9 @@ const Navbar = () => {
               </Link>
             </li>
               </ul>
+            </div>
+            <div className="mt-20 text-gray-600">
+            Copyright © 2022 Charles
             </div>
         </SideSheet>
 

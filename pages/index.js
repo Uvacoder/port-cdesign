@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
-
+import CaseCard from '../components/CaseCard'
+import coverGdt from '../public/cover-gdt@2x.png';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -14,7 +16,21 @@ export default function Home() {
       <Navbar/>
       <main className="flex flex-col">
       <Hero/>
+      <div className="grid lg:grid-cols-2 w-full justify-between gap-10 px-6 lg:px-10">
+      <CaseCard image={coverGdt} title='Global Pay' link='/globalpay' tag1='UI&UX Design' tag2='Web Design'/>
+      <CaseCard image={coverGdt} title='Global Pay' link='/globalpay' tag1='UI&UX Design' tag2='Web Design'/>
+      <CaseCard image={coverGdt} title='Global Pay' link='/globalpay' tag1='UI&UX Design' tag2='Web Design'/>
+      <CaseCard image={coverGdt} title='Global Pay' link='/globalpay' tag1='UI&UX Design' tag2='Web Design'/>
+      <CaseCard image={coverGdt} title='Global Pay' link='/globalpay' tag1='UI&UX Design' tag2='Web Design'/>
+      <CaseCard image={coverGdt} title='Global Pay' link='/globalpay' tag1='UI&UX Design' tag2='Web Design'/>
+      <CaseCard image={coverGdt} title='Global Pay' link='/globalpay' tag1='UI&UX Design' tag2='Web Design'/>
+      <CaseCard image={coverGdt} title='Global Pay' link='/globalpay' tag1='UI&UX Design' tag2='Web Design'/>
+      </div>
+      
       </main>
+
+      <Footer />
+
     </div>
   )
 }
