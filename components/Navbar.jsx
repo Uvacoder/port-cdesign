@@ -3,6 +3,10 @@ import Link from "next/link"
 import Image from "next/image"
 import { useRouter } from 'next/router';
 import { Popover } from '@douyinfe/semi-ui';
+import logo from '../public/navbar/logo.svg'
+import logoHovering from '../public/navbar/logo-hovering@2x.png'
+import iconQrcode from '../public/navbar/qrcode.svg'
+
 
 const Logo = () => {
   const [isHovering, setIsHovered] = useState(false);
@@ -15,9 +19,9 @@ const Logo = () => {
       onMouseLeave={onMouseLeave}
     >
         {isHovering ? (
-          <Image className="transition hover:rotate-45" src="/../public/navbar/logo-hovering@2x.png" width={36} height={36} alt="logo-hovering" />
+          <Image className="transition hover:rotate-45" src={logoHovering} width={36} height={36} alt="logo-hovering" />
         ) : (
-          <Image className="transition" src="/../public/navbar/logo.svg" width={36} height={36} alt="logo-normal" />
+          <Image className="transition" src={logo} width={36} height={36} alt="logo-normal" />
         )}
     </div>
   );
@@ -67,7 +71,7 @@ const Navbar = () => {
             clickToHide={true}
             position= 'bottomRight'>
               <div className="self-center">
-                <Image className=" hover:opacity-80 active:opacity-95"  src='/../public/navbar/qrcode.svg' alt='icon qrcode' width={36} height={36}/>
+                <Image className=" hover:opacity-80 active:opacity-95"  src={iconQrcode} alt='icon qrcode' width={36} height={36}/>
               </div>
           
 
