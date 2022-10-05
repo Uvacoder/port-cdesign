@@ -6,6 +6,7 @@ import { Popover } from '@douyinfe/semi-ui';
 import logo from '../public/navbar/logo.svg'
 import logoHovering from '../public/navbar/logo-hovering@2x.png'
 import iconQrcode from '../public/navbar/qrcode.svg'
+import qrcode from '../public/navbar/qrcode@2x.png'
 
 
 const Logo = () => {
@@ -66,13 +67,13 @@ const Navbar = () => {
         
           <Popover
            content={
-            <Image className="mx-4"  src='/../public/navbar/qrcode@2x.png' alt='picture of wechat qrcode' width={240} height={240}/>}
-            trigger="click"
+            <Image className="mx-4"  src={qrcode} alt='picture of wechat qrcode' width={240} height={240}/>}
+            trigger="hover"
             clickToHide={true}
             position= 'bottomRight'>
-              <div className="self-center">
+              <button className="self-center">
                 <Image className=" hover:opacity-80 active:opacity-95"  src={iconQrcode} alt='icon qrcode' width={36} height={36}/>
-              </div>
+              </button>
           
 
           </Popover>
@@ -83,3 +84,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
