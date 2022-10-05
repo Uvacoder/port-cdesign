@@ -5,8 +5,8 @@ import { useRouter } from 'next/router';
 import { Popover } from '@douyinfe/semi-ui';
 import logo from '../public/navbar/logo.svg'
 import logoHovering from '../public/navbar/logo-hovering@2x.png'
-import iconQrcode from '../public/navbar/qrcode.svg'
-import qrcode from '../public/navbar/qrcode@2x.png'
+import Qrcode from './Qrcode'
+
 
 
 const Logo = () => {
@@ -64,20 +64,12 @@ const Navbar = () => {
             </li>
             </ul>
         </div>
+        <div className="self-center">
+        <Qrcode />
+        </div>
         
-          <Popover
-           content={
-            <Image className="mx-4"  src={qrcode} alt='picture of wechat qrcode' width={240} height={240}/>}
-            trigger="hover"
-            clickToHide={true}
-            position= 'bottomRight'>
-              <button className="self-center">
-                <Image className=" hover:opacity-80 active:opacity-95"  src={iconQrcode} alt='icon qrcode' width={36} height={36}/>
-              </button>
-          
 
-          </Popover>
-        
+         
       </div>
        
   )
