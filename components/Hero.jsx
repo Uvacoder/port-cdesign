@@ -3,7 +3,7 @@ import avatar from "../public/avatar@2x.png"
 
 const Hero = () => {
   return (
-    <div className="text-white mt-20 flex flex-col justify-center items-center p-auto h-180 gap-y-6">
+    <div className="text-white mt-20 flex flex-col justify-center items-center p-auto transition-all  h-96 md:h-180 gap-y-6">
         <Image className="justify-self-center" src={avatar} alt='picture of my avatar' width={100} height={100}/>
         <div className="text-white font-bold text-4xl xl:text-6xl text-center">
         Hola! Amigos.

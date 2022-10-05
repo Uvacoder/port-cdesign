@@ -18,9 +18,11 @@ module.exports = semi({
   // your custom Next.js configuration
   reactStrictMode: true,
   swcMinify: true,
+  
    images: {
     // loader: 'cloudinary',
     // path: '/',
+    unoptimized: true,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
