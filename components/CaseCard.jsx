@@ -5,7 +5,7 @@ import Link from 'next/link';
 const CaseCard = ({image,link,title,tag1,tag2,tag3}) => {
   return (
     <div>
-    <div className='lg:mb-16 md:mb-8 sm:mb-8'>
+    <div className='lg:mb-16 md:mb-8 mb-8'>
     <Link href={link}>
     <a >
     <Image src={image}  className=" hover:scale-[98%] transition-all duration-300 w-full lg:w-full  ">

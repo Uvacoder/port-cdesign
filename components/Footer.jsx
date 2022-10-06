@@ -17,27 +17,27 @@ const Footer = () => {
     }}>
 
     </div>
-    <div className="flex flex-row gap-8 mt-10">
+    <div className="flex flex-row gap-8 mt-10 text-m lg:text-xl">
     
     <Link href='https://dribbble.com/mumumycat'>
-    <a className="text-2xl text-white font-bold">
+    <a className=" text-white font-bold">
         Dribbble 
     </a>
     </Link>
     <Link href='https://github.com/Charles026'>
-    <a className="text-2xl text-white font-bold">
+    <a className=" text-white font-bold">
         Github 
     </a>
     </Link>
     <Link href='https://www.instagram.com/bancs_pine/'>
-    <a className="text-2xl text-white font-bold">
+    <a className=" text-white font-bold">
         Instagram 
     </a>
     </Link>
     </div>
-    <div className="flex flex-col text-gray-400 my-10">
-     <p className="text-center lg:text-right">Build with love for Ahdai</p> 
-     <p className="text-center lg:text-right">
+    <div className="text-center text-sm flex flex-col text-gray-400 my-10">
+     <p className=" lg:text-right">Build with love for Ahdai</p> 
+     <p className=" lg:text-right">
      Copyright © 2014-present Charles
      </p>
     </div>
