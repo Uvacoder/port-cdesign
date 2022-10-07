@@ -9,7 +9,7 @@ const Hero = () => {
         Hola! Amigos.
         </div>
         <div className='text-white font-bold text-2xl xl:text-4xl w-4/5 xl:w-3/5 text-center leading-normal'>
-        I’m Chales. I’m an UI/UX designer✏️, sometime coder🧑‍💻, and sometime drunker🤮🌚
+        I’m Charles. I’m an UI/UX designer✏️, sometime coder🧑‍💻, and sometime drunker🤮🌚
         </div>
     </div>
   )

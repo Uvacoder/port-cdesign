@@ -115,7 +115,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div className="mt-20 text-gray-600">
-            Copyright © 2022 Charles
+            Copyright © 2014-present Charles
             </div>
         </SideSheet>
 
