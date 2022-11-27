@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 import CaseCard from '../components/CaseCard'
 import coverGdt from '../public/cover-gdt@2x.png';
 import Footer from '../components/Footer';
-import { ScrollerMotion } from 'scroller-motion'
+// import { ScrollerMotion } from 'scroller-motion'
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      <ScrollerMotion>
+     // <ScrollerMotion>
       <main className="flex flex-col">
      
       <Hero/>
@@ -95,7 +95,7 @@ export default function Home() {
       </main>
 
       <Footer />
-      </ScrollerMotion>
+    //  </ScrollerMotion>
     </div>
     </>
   )
